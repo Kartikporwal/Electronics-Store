@@ -37,7 +37,8 @@ const ProductCard = () => {
             ₹6,999
           </del>
         </div>
-         <button className="w-full mt-5 bg-slate-950 text-white py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-yellow-400 hover:text-black transition">
+         <button 
+         className="w-full mt-5 bg-slate-950 text-white py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-yellow-400 hover:text-black transition">
           <ShoppingCart size={19} />
           Add To Cart
         </button>

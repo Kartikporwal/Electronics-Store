@@ -6,9 +6,7 @@ const HomePage = () => {
 
   return (
     <div>
-
-      <section className="bg-slate-950 text-white min-h-[480px] flex items-center px-8 md:px-20">
-
+      <section className="bg-slate-950 text-white min-h-[480px] flex items-center px-8 md:px-20 mt-1">
         <div className="max-w-2xl">
 
           <p className="text-yellow-400 font-semibold mb-4">
