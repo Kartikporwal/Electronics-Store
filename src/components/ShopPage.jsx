@@ -1,7 +1,8 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 
-const ShopPage = () => {
+const ShopPage = ({products}) => {
+
   return (
     <div className='px-6 md:px-12 py-10'>
         <div className='mb-10'>
@@ -14,27 +15,17 @@ const ShopPage = () => {
             </p>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between gap-5 mb-10'>
-
-            <input type="text" placeholder='Search Products...'
-            className='border rounded-lg px-5 py-3 outline-none w-full md:w-1/2' />
-
-         <select className="border rounded-lg px-5 py-3">
-          <option>All Categories</option>
-          <option>Laptop</option>
-          <option>Audio</option>
-          <option>Camera</option>
-          <option>Accessories</option>
-        </select>
-        </div>
-
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'> 
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-        </div>
-        </div>
+           {products.map((product) => {
+       return (
+      <ProductCard
+        key={product.id}
+        product={product}
+      />
+      )
+   })}
+      </div>
+       </div>
   )
 }
 
